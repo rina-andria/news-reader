@@ -6,6 +6,7 @@ import { Spin } from 'antd';
 
 class Results extends React.Component<IResult, {}> {
   public render() {
+    console.log('Loading...', this.props.loading);
     return (
       <section className="Results">
         {this.props.loading && <Spin tip="Loading..." className="Results__loading" size="large" />}

@@ -6,7 +6,10 @@ const rootReducer = (state: IAppState = initialState, action: any) => {
     case SEARCH_PENDING: {
       return {
         ...state,
-        loading: true,
+        results: {
+          ...state.results,
+          loading: true,
+        },
       };
     }
 
@@ -14,7 +17,10 @@ const rootReducer = (state: IAppState = initialState, action: any) => {
       return {
         ...state,
         error: action.payload,
-        loading: true,
+        results: {
+          ...state.results,
+          loading: true,
+        },
       };
     }
 
