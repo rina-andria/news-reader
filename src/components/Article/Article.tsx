@@ -8,7 +8,7 @@ class Article extends React.Component<IArticle, {}> {
     return (
       <article className="Article">
         <div className="Article__image">
-          <Img src={[this.props.urlToImage, 'no-image.svg']} alt="the article's image" />
+          <Img src={[this.props.urlToImage, './no-image.svg']} alt="the article's image" />
         </div>
         <div className="Article__details">
           <div className="Article__details-text">
