@@ -1,0 +1,40 @@
+.Results {
+  min-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Results__items {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Results__items-noNews {
+  margin: 10px;
+  padding: 50px 0px;
+  font-size: 24px;
+  flex: 1;
+  margin: auto;
+  color: #616161;
+}
+
+.Results__loading {
+  margin: 10px;
+  padding: 100px 0px;
+  font-size: 20px;
+  flex: 1;
+  margin: auto;
+  color: #424242;
+}
+
+@media (max-width: 1023px) {
+  .Results {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Results__items-noNews {
+    padding: 50px 10px;
+  }
+}

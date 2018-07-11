@@ -1,0 +1,19 @@
+.SearchFooter {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.SearchFooter__count {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 414px) {
+  .SearchFooter__count {
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

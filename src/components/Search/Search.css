@@ -1,0 +1,23 @@
+.Search {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+  .Search {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .Search__item {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.Search__item {
+  flex: 0 1 23%;
+}
